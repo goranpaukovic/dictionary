@@ -25,6 +25,11 @@ static	List<String> croatianWords = new ArrayList<String>();
 static	List<String> tmpResult = new ArrayList<String>();
 
 public static void main(String[] args) {
+	if(args.length == 0)
+	{
+		System.out.println("run dictionary: java rjecnikMain <word in english>");
+		System.exit(0);
+	}
 	//////try (BufferedReader br = new BufferedReader(new FileReader("testna_baza.txt"))) {
 	//String wordsDataBase = "testna_baza.txt"
 	String wordsDataBase = "/home/egorpau/programming/java/rijecnik/EH.Txt";
